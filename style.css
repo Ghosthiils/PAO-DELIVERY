@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8e5b2; /* cor clara que lembra padaria */
+    padding: 10px 20px;
+    font-family: sans-serif;
+  }
+  
+  .nav-esquerda a,
+  .nav-direita a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #6b4c1b; /* cor marrom pãozinho */
+    font-weight: bold;
+  }
+  
+  .nav-direita {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-direita input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
