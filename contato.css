@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/image/AdobeStock_463405247.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    background-color: rgba(255, 255, 255, 0.85);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Navbar */
+.navvbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8e5b2;
+    padding: 15px 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navvesquerda a {
+    margin: 0 15px;
+    color: #6b4c1b;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navvesquerda a:hover {
+    text-decoration: underline;
+}
+
+/* Logo */
+#Logo {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Contato */
+.contato {
+    max-width: 800px;
+    margin: 80px auto 0 auto;
+    background-color: #fffaf0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contato h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #6b4c1b;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #6b4c1b;
+    text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .contato {
+        padding: 20px;
+    }
+
+    .navvesquerda a {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+
+    #Logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.botao-whatsapp {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botao-whatsapp a {
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.botao-whatsapp a:hover {
+    background-color: #128C7E;
+}
