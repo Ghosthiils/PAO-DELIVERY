@@ -111,3 +111,21 @@ body {
 .botao-whatsapp a:hover {
     background-color: #128C7E;
 }
+
+
+.rodape {
+    background-color: #f8e5b2;
+    color: #6b4c1b;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.rodape p {
+    margin: 5px 0;
+}

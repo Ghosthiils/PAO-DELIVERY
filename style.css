@@ -1,29 +1,174 @@
+/* Aplica imagem de fundo à página inteira */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('/image/AdobeStock_463405247.jpeg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* BARRA DE NAVEGAÇÃO */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8e5b2; /* cor clara que lembra padaria */
-    padding: 10px 20px;
-    font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8e5b2;
+  padding: 10px 20px;
+}
+
+/* Links do menu */
+.nav-esquerda a,
+.nav-direita a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #6b4c1b;
+  font-weight: bold;
+}
+
+/* Campo de busca e carrinho */
+.nav-direita {
+  display: flex;
+  align-items: center;
+}
+.nav-direita input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* BOTÕES CENTRALIZADOS */
+.botoes-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;         /* Espaço entre os botões */
+  margin-top: 100px; /* Espaço do topo */
+}
+
+/* BOTÃO CARDÁPIO */
+.cardapio {
+  background-color: #c67b00;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+.cardapio:hover {
+  background-color: #a86400;
+  transform: scale(1.05);
+}
+
+/* BOTÃO PEDIDO */
+.pedido {
+  background-color: #c67b00;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+.pedido:hover {
+  background-color: #a86400;
+  transform: scale(1.05);
+}
+
+/* RODAPÉ FIXO */
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8e5b2;
+  color: #6b4c1b;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .botoes-centro {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 60px;
   }
-  
-  .nav-esquerda a,
-  .nav-direita a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #6b4c1b; /* cor marrom pãozinho */
-    font-weight: bold;
+
+  .cardapio,
+  .pedido {
+    width: 80%; /* faz os botões ocuparem mais espaço na largura */
+    font-size: 16px;
   }
-  
-  .nav-direita {
-    display: flex;
-    align-items: center;
+}
+.galeria-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.galeria-produtos img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.galeria-produtos img:hover {
+  transform: scale(1.05);
+}
+
+.cabecalho-site {
+  text-align: center;
+  padding: 40px 20px 20px;
+  color: #fff8dc;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.cabecalho-site h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cabecalho-site p {
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .galeria-produtos img {
+    width: 90%;
   }
-  
-  .nav-direita input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
+
+  .cabecalho-site h1 {
+    font-size: 2rem;
   }
-  
+
+  .cabecalho-site p {
+    font-size: 1rem;
+  }
+}
+.produto {
+  text-align: center;
+  width: 250px;
+}
+
+.produto p {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #fff8dc;
+  text-shadow: 1px 1px 2px #000;
+}
+
+
+
