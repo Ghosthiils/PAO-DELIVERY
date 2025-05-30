@@ -170,5 +170,17 @@ body {
   text-shadow: 1px 1px 2px #000;
 }
 
+.area-sobre {
+  max-width: 800px;
+  margin: 50px auto 100px 50px; /* alinhado à esquerda */
+  background-color: rgba(255, 248, 220, 0.9); /* fundo amarelo claro com transparência */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  color: #4d3715;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: left;
+}
 
 
