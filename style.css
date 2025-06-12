@@ -185,5 +185,126 @@ body {
   line-height: 1.7;
   text-align: left;
 }
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #fff8e1;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
+.login-container h1 {
+  font-size: 28px;
+  color: #c67b00;
+  margin-bottom: 10px;
+}
+
+.login-container h2 {
+  font-size: 20px;
+  color: #4d3715;
+  margin-bottom: 25px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #4d3715;
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  background-color: #c67b00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #a86400;
+}
+
+.registro {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.registro a {
+  color: #c67b00;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Impede a rolagem da página */
+
+.botao-cardapio {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #c67b00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.botao-cardapio:hover {
+  background-color: #d2934f;
+}
+
+.formulario-pedido {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+.formulario-pedido form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-pedido label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario-pedido input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.formulario-pedido button {
+  padding: 10px;
+  background-color: #966400;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario-pedido button:hover {
+  background-color: #d2934f;
+}
 
