@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pão Delivery</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/image/fotor-20250529215819.png">
+  
 </head>
 <body>
 
@@ -21,6 +23,7 @@
     <div class="nav-direita">
       <input type="text" placeholder="Buscar pão...">
       <a href="carrinho.html">🛒 Carrinho</a>
+
     </div>
   </div>
 
@@ -35,41 +38,32 @@
     <a href="cardapio.html" class="botao-cardapio">Cardápio</a>
     <a href="pedido.html" class="botao-cardapio">Faça seu pedido</a>
   </div>
-
-  <div class="galeria-produtos">
-
-    <div class="produto">
-      <a href="pedido.html">
-        <img src="/image/pao frances.webp" alt="Descrição do pão">
-      </a>
-      <p>Pão francês crocante</p>
-    </div>
-    
-  <div class="produto">
-    <img src="/image/pao de forma.webp" alt="Descrição do pão">
-    <p>Pão integral saudável</p>
+<!-- Carrossel com Radio Buttons -->
+<div class="carrossel-container">
+  <div class="carrossel-slide active">
+    <img src="image/produto1.jpg" alt="Produto 1">
+  </div>
+  <div class="carrossel-slide">
+    <img src="image/produto2.jpg" alt="Produto 2">
+  </div>
+  <div class="carrossel-slide">
+    <img src="image/produto3.jpg" alt="Produto 3">
   </div>
 
-  <div class="produto">
-    <img src="/image/pao croassint.webp" alt="Descrição do pão">
-    <p>Croissant amanteigado</p>
-    </div>
+  <button class="carrossel-btn anterior">&#10094;</button>
+  <button class="carrossel-btn proximo">&#10095;</button>
+</div>
 
-    <div class="produto">
-    <img src="/image/rosquinhas.webp" alt="Descrição do pão">
-    <p>Rosquinhas</p>
-    </div>
 
-    <div class="produto">
-    <img src="/image/AdobeStock_216876476.webp" alt="Descrição do pão">
-    <p>Rocas recheadas</p>
-  </div>
+  
+  
+  
   
 
   <!-- RODAPÉ FIXO -->
   <footer class="rodape">
     <p>&copy; 2025 Pão Delivery. Todos os direitos reservados.</p>
   </footer>
-
+  <script src="index.js"></script>
 </body>
 </html>

@@ -308,3 +308,115 @@ body {
   background-color: #d2934f;
 }
 
+/* ----- CARRINHO ----- */
+.conteudo-carrinho {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff9f0;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-carrinho {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #e3c9a4;
+  border-radius: 8px;
+}
+
+.total-carrinho {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.botoes-carrinho {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoes-carrinho button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d4a373;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botoes-carrinho button:hover {
+  background-color: #bc8a5f;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-direita {
+    margin-top: 10px;
+  }
+  .botoes-centro {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.carrossel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.carrossel-slide {
+  display: none;
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.carrossel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carrossel-slide.active {
+  display: block;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(198, 123, 0, 0.7);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.carrossel-btn:hover {
+  background-color: #a86400;
+}
+
+.carrossel-btn.anterior {
+  left: 10px;
+}
+
+.carrossel-btn.proximo {
+  right: 10px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Pão Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho-site">
+    <h1>Seu Carrinho 🛒</h1>
+    <p>Revise seu pedido antes de finalizar.</p>
+  </header>
+
+  <!-- LISTA DE ITENS NO CARRINHO -->
+  <main class="conteudo-carrinho">
+    <div class="item-carrinho">
+      <p><strong>Pão francês</strong> - 6 unidades</p>
+      <p>R$ 3,00</p>
+    </div>
+
+    <div class="item-carrinho">
+      <p><strong>Rosquinhas</strong> - 1 pacote</p>
+      <p>R$ 5,50</p>
+    </div>
+
+    <hr>
+
+    <!-- TOTAL -->
+    <div class="total-carrinho">
+      <p><strong>Total:</strong></p>
+      <p><strong>R$ 8,50</strong></p>
+    </div>
+
+    <!-- BOTÕES -->
+    <div class="botoes-carrinho">
+      <button onclick="window.location.href='cardapio.html'">Voltar ao cardápio</button>
+      <button onclick="finalizarCompra()">Finalizar Pedido</button>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>&copy; 2025 Pão Delivery. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function finalizarCompra() {
+      alert("Pedido finalizado com sucesso!");
+      // Aqui você pode redirecionar ou salvar o pedido
+    }
+  </script>
+
+</body>
+</html>
