@@ -373,3 +373,41 @@ body {
     gap: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-esquerda a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .login-container {
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 16px;
+  }
+
+  .login-container h1 {
+    font-size: 24px;
+  }
+
+  .login-container h2 {
+    font-size: 18px;
+  }
+}
+
